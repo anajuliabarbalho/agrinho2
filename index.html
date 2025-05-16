@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia no Campo: Ontem e Hoje</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #556B2F; /* Verde Oliva Escuro */
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            border-bottom: 5px solid #A0522D; /* Marrom Terra */
+        }
+
+        nav {
+            background-color: #f0e68c; /* Khaki */
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 2px solid #d2b48c; /* Tan */
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.7em 1.5em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #8FBC8F; /* Verde Musgo */
+            color: white;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            padding: 2em 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2E8B57; /* Verde Floresta */
+            text-align: center;
+            margin-bottom: 1em;
+            border-bottom: 3px dotted #8FBC8F;
+            padding-bottom: 0.5em;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .comparison-item {
+            text-align: center;
+        }
+
+        .comparison-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1em;
+        }
+
+        .vs {
+            font-size: 2em;
+            color: #A0522D; /* Marrom Terra */
+            font-weight: bold;
+        }
+
+        .interactive-section {
+            background-color: #f9f9f9;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-top: 2em;
+            text-align: center;
+        }
+
+        .interactive-button {
+            background-color: #8FBC8F; /* Verde Musgo */
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin: 0.5em;
+        }
+
+        .interactive-button:hover {
+            background-color: #556B2F; /* Verde Oliva Escuro */
+        }
+
+        .highlight {
+            color: #A0522D; /* Marrom Terra */
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 2em;
+        }
+
+        /* Decorações */
+        .decor-leaf-top-left {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2em;
+            color: #8FBC8F; /* Verde Musgo */
+        }
+
+        .decor-gear-bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 2em;
+            color: #d2b48c; /* Tan */
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tecnologia no Campo: Ontem e Hoje</h1>
+        <p>Uma jornada visual pela evolução da agricultura</p>
+        <div class="decor-leaf-top-left">🌿</div>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#comparativo">Comparativo Visual</a>
+        <a href="#interativo">A Mão Dupla da Tecnologia</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="section">
+            <h2>Bem-vindos à Evolução Agrícola!</h2>
+            <p>Explore a fascinante transformação da agricultura ao longo do tempo, desde as ferramentas manuais de outrora até as tecnologias de ponta que moldam o campo moderno. Descubra como a inovação impulsionou a produção, otimizou recursos e conectou o campo com o futuro.</p>
+            <img src="https://via.placeholder.com/900x350/556B2F/FFFFFF?Text=Paisagem%20Agr%C3%ADcola%20Evoluindo" alt="Paisagem Agrícola Evoluindo" style="max-width: 100%; border-radius: 5px;">
+        </section>
+
+        <section id="comparativo" class="section">
+            <h2>Comparativo Visual e Interativo</h2>
+            <p>Arraste ou clique nas imagens para revelar mais informações sobre cada ferramenta e tecnologia.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <h3>Antigas Ferramentas Manuais</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/A0522D/FFFFFF?Text=Arado%20Manual" alt="Arado Manual" onclick="showAlert('Arado Manual: Exigia grande esforço físico e cobria uma área limitada por dia.')" style="cursor: pointer;">
+                    </div>
+                    <p>O trabalho árduo da <span class="highlight">força humana</span>.</p>
+                </div>
+                <div class="vs">vs</div>
+                <div class="comparison-item">
+                    <h3>Tratores Automatizados</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/8FBC8F/FFFFFF?Text=Trator%20Automatizado" alt="Trator Automatizado" onclick="showAlert('Trator Automatizado: Realiza o trabalho de forma eficiente, cobrindo grandes áreas com precisão e menor necessidade de intervenção humana.')" style="cursor: pointer;">
+                    </div>
+                    <p>A precisão e a eficiência da <span class="highlight">automação</span>.</p>
+                </div>
+
+                <div class="comparison-item">
+                    <h3>Enxada</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/A0522D/FFFFFF?Text=Enxada" alt="Enxada" onclick="showAlert('Enxada: Ferramenta básica para capinar, cavar e preparar pequenos espaços.')" style="cursor: pointer;">
+                    </div>
+                    <p>O esforço individual no <span class="highlight">cuidado da terra</span>.</p>
+                </div>
+                <div class="vs">vs</div>
+                <div class="comparison-item">
+                    <h3>Sensores de Solo</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/8FBC8F/FFFFFF?Text=Sensor%20de%20Solo" alt="Sensor de Solo" onclick="showAlert('Sensor de Solo: Coleta dados precisos sobre umidade, nutrientes e temperatura do solo, otimizando o uso de recursos.')" style="cursor: pointer;">
+                    </div>
+                    <p>A inteligência de dados para um <span class="highlight">cultivo otimizado</span>.</p>
+                </div>
+
+                <div class="comparison-item">
+                    <h3>Sementeira Manual</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/A0522D/FFFFFF?Text=Sementeira%20Manual" alt="Sementeira Manual" onclick="showAlert('Sementeira Manual: Processo manual e demorado de plantio de sementes.')" style="cursor: pointer;">
+                    </div>
+                    <p>O plantio <span class="highlight">lento e manual</span>.</p>
+                </div>
+                <div class="vs">vs</div>
+                <div class="comparison-item">
+                    <h3>Drones Agrícolas</h3>
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/400x300/8FBC8F/FFFFFF?Text=Drone%20Agr%C3%ADcola" alt="Drone Agrícola" onclick="showAlert('Drones Agrícolas: Monitoram grandes áreas, identificam pragas, aplicam defensivos de forma precisa e geram mapas detalhados das plantações.')" style="cursor: pointer;">
+                    </div>
+                    <p>A visão aérea e a precisão da <span class="highlight">tecnologia embarcada</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interativo" class="section interactive-section">
+            <h2>A Mão Dupla da Tecnologia</h2>
+            <p>Explore a simbiose entre o campo e a tecnologia:</p>
+            <button class="interactive-button" onclick="showAlert('A tecnologia oferece ferramentas avançadas para o campo, aumentando a produtividade e a sustentabilidade.')">A Tecnologia Ajuda o Campo</button>
+            <button class="interactive-button" onclick="showAlert('O campo fornece dados valiosos, desafios reais e um ambiente de testes para o desenvolvimento de novas tecnologias.')">O Campo Ajuda a Tecnologia</button>
+            <p>Clique nos botões para sa!DOCTYPE html>
+                <html lang="pt-br">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Mapeamento de Sabores do Campo - Bem-Vinda!</title>
+                    <link rel="stylesheet" href="style.css">
+                    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+                </head>
+                <body>
+                    <header class="hero-section">
+                        <div class="overlay"></div>
+                        <div class="hero-content">
+                            <h1>Mapeamento de Sabores do Campo</h1>
+                            <p>Descobrindo a doçura e a magia da vida rural</p>
+                            <button class="cta-button" onclick="scrollToSection('sabores')">Explorar Sabores</button>
+                        </div>
+                    </header>
+                
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#sabores">Nossos Sabores</a></li>
+                            <li><a href="#galeria">Galeria Rural</a></li>
+                            <li><a href="#contato">Fale Conosco</a></li>
+                        </ul>
+                    </nav>
+                
+                    <main>
+                        <section id="sobre" class="section-padded">
+                            <h2>🌸 Sobre Nós</h2>
+                            <div class="content-wrapper">
+                                <p>Bem-vinda ao nosso cantinho especial! Aqui no "Mapeamento de Sabores do Campo", celebramos a riqueza e a pureza da vida rural. Nossa missão é conectar você aos sabores autênticos que vêm diretamente da terra, cultivados com carinho e tradição. Acreditamos na beleza do simples, no aroma das flores do campo e no sabor das frutas frescas colhidas sob o sol.</p>
+                                <img src="images/girl-in-field.png" alt="Menina no campo com flores" class="section-image">
+                            </div>
+                        </section>
+                
+                        <section id="sabores" class="section-padded">
+                            <h2> Nossos Sabores</h2>
+                            <p>Descubra os tesouros que a natureza nos oferece. Cada sabor é uma história, uma tradição, um pedaço do campo na sua mesa.</p>
+                            <div class="sabores-grid">
+                                <div class="sabor-item">
+                                    <img src="images/strawberry-jam.png" alt="Doce de Morango Artesanal">
+                                    <h3>Doce de Morango Artesanal</h3>
+                                    <p>Feito com morangos frescos, colhidos no ponto certo de doçura. Um clássico que abraça o paladar.</p>
+                                </div>
+                                <div class="sabor-item">
+                                    <img src="images/honey.png" alt="Mel Puro do Campo">
+                                    <h3>Mel Puro do Campo</h3>
+                                    <p>Néctar dourado das flores silvestres, direto das colmeias. Doçura e saúde em cada gota.</p>
+                                </div>
+                                <div class="sabor-item">
+                                    <img src="images/cheese.png" alt="Queijo Fresco da Fazenda">
+                                    <h3>Queijo Fresco da Fazenda</h3>
+                                    <p>Produzido artesanalmente com leite fresco, ideal para acompanhar seu café da manhã no campo.</p>
+                                </div>
+                                 <div class="sabor-item">
+                                    <img src="images/berry-pie.png" alt="Torta de Frutas Silvestres">
+                                    <h3>Torta de Frutas Silvestres</h3>
+                                    <p>Combinação perfeita de frutas vermelhas colhidas à mão, em uma massa crocante e delicada.</p>
+                                </div>
+                            </div>
+                        </section>
+                
+                        <section id="galeria" class="section-padded">
+                            <h2>📸 Galeria Rural</h2>
+                            <p>Um vislumbre da beleza que nos inspira.</p>
+                            <div class="gallery-grid">
+                                <img src="images/gallery1.png" alt="Cesta de Frutas Frescas" class="gallery-item">
+                                <img src="images/gallery2.png" alt="Flores do Campo" class="gallery-item">
+                                <img src="images/gallery3.png" alt="Por do sol no campo" class="gallery-item">
+                                <img src="images/gallery4.png" alt="Colheita de vegetais" class="gallery-item">
+                            </div>
+                        </section>
+                
+                        <section id="contato" class="section-padded">
+                            <h2>💌 Fale Conosco</h2>
+                            <p>Tem alguma pergunta, sugestão ou quer saber mais sobre nossos produtos? Envie uma mensagem! Ficaremos felizes em conversar com você.</p>
+                            <form class="contact-form">
+                                <input type="text" placeholder="Seu Nome" required>
+                                <input type="email" placeholder="Seu Email" required>
+                                <textarea placeholder="Sua Mensagem" rows="6" required></textarea>
+                                <button type="submit" class="cta-button">Enviar Mensagem</button>
+                            </form>
+                        </section>
+                    </main>
+                
+                    <footer>
+                        <p>&copy; 2025 Mapeamento de Sabores do Campo. Todos os direitos reservados. Feito com 💕 no campo.</p>
+                    </footer>
+                
+                    <script src="script.js"></script>
+                </body>
+                </html>
+        <section id="contato" class="section">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma pergunta ou sugestão? Entre em contato conosco!</p>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea><br><br>
+                <button type="submit" style="background-color: #556B2F; color: white; padding: 0.8em 1.5em; border: none; border-radius: 5px; cursor: pointer;">Enviar Mensagem</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tecnologia no Campo</p>
+        <div class="decor-gear-bottom-right">⚙️</div>
+    </footer>
+
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
